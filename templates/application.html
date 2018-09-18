@@ -1,0 +1,24 @@
+{% extends "home.html" %}
+
+{% block pagecontent %}
+  <div class="hero">
+    <div class="intro-text">
+      <div class="logo-wrapper">
+          <h1 class="h1 serif">{{appinfo['title1']}}<br/></h1><h1 class="h1">{{appinfo['title2']}}</h1>
+      </div>
+        <div class="info-wrapper">
+            <h2 class="h2">{{appinfo['short_text']}}<br/></h2>
+            <a href="#" data-w-id="4cd95f35-2d4d-4d4d-47a5-802a9136bd8d" class="more-button button secondary w-inline-block">
+                <div class="button-text">Mehr erfahren</div>
+            </a>
+            <div data-w-id="4cd95f35-2d4d-4d4d-47a5-802a9136bd8d" class="more-info"><h3 class="h3">
+                {{appinfo['more_title']}}</h3>
+                <p class="p">{{appinfo['more_content']}}</p></div>
+        </div>
+
+      <div class="" style="width: 100%;">
+          {{appinfo['app_content']|safe}}
+      </div>
+    </div>
+  </div>
+{% endblock %}

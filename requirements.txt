@@ -1,0 +1,13 @@
+werkzeug
+workalendar
+# auth0-python
+flask
+flask-sslify
+python-dotenv
+requests
+authlib
+six
+dominate
+xlrd
+pandas
+

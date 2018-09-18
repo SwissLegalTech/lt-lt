@@ -1,0 +1,12 @@
+applications:
+- name: lt-www
+  current_app_name: lt-www
+  buildpack: staticfile_buildpack
+  memory: 64M
+  instances: 1
+  disk_quota: 5G
+  env:
+    ENVIRONMENT: production
+  routes:
+    - route: www-legaltools.scapp.io
+    - route: www.lawyer.tools
